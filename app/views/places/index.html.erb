@@ -1,7 +1,9 @@
 <% @places.each do |place| %>
-  <h1><%= place.name %>
-    <br/>
-    <%= place.description %>
-    <br/>
-    <%= place.address %><h1>
+  <div>
+    <h1><%= place.name %></h1><br/>
+    <p><%= place.description %></p><br/>
+    <p><%= place.address %></p><br/>
+  </div>
+
+  <hr/>
 <% end %>
