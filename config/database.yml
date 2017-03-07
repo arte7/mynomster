@@ -7,13 +7,19 @@ default: &default
   host: localhost
 
 development:
-  <<: *default
+  adapter: postgresql
   database: mynomster_development
+  pool: 5
+  timeout: 5000
 
-test: &TEST
-  <<: *default
+test:
+  adapter: postgresql
   database: mynomster_test
+  pool: 5
+  timeout: 5000
 
 production:
-  <<: *default
+  adapter: postgresql
   database: mynomster_production
+  pool: 5
+  timeout: 5000
