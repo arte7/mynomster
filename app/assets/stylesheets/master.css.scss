@@ -75,3 +75,15 @@ div.input {
     width: 100px;
     }
 }
+
+div.place_description {
+  label {
+    vertical-align: top;
+  }
+
+  textarea {
+    width: 250px;
+    height: 100px;
+  }
+
+}
