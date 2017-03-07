@@ -4,7 +4,6 @@ development:
   database: mynomster_development
   pool: 5
   timeout: 5000
-  username: postgres
   password: password
 
 test: &TEST
@@ -12,7 +11,6 @@ test: &TEST
   encoding: utf8
   database: mynomster_test
   pool: 5
-  username: postgres
   password: password
 
 production:
@@ -20,5 +18,4 @@ production:
   encoding: utf8
   database: mynomster_production
   pool: 5
-  username: postgres
   password: password
