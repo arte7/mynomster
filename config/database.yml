@@ -1,21 +1,19 @@
-development:
+default: &default
   adapter: postgresql
-  encoding: utf8
-  database: mynomster_development
+  encoding: unicode
   pool: 5
-  timeout: 5000
+  username: postgres
   password: password
+  host: localhost
+
+development:
+  <<: *default
+  database: mynomster_development
 
 test: &TEST
-  adapter: postgresql
-  encoding: utf8
+  <<: *default
   database: mynomster_test
-  pool: 5
-  password: password
 
 production:
-  adapter: postgresql
-  encoding: utf8
+  <<: *default
   database: mynomster_production
-  pool: 5
-  password: password
