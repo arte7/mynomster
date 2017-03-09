@@ -66,28 +66,20 @@ body {
     .pagination a:hover, .pagination a:focus {
       text-decoration: underline; }
 
-input {
-  text-indent: 10px;
-}
 
-div.input {
+
+.place_description {
   label {
-    width: 100px;
-    }
-}
-
-div.place_description {
-  label {
-    vertical-align: top;
-  }
-
+    vertical-align: top;}
   textarea {
     width: 250px;
-    height: 100px;
+    height: 100px;}
+}
+
+.form-inputs {
+  margin-left: 10px;}
+  label {
+    width: 200px;
+  .input {
+    text-indent: 10px;}
   }
-
-}
-
-div.form-inputs {
-  margin-left: 20px;
-}
