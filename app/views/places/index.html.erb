@@ -4,9 +4,6 @@
     <p><%= place.description %></p><br/><br/>
     <p><%= place.address %></p><br/>
 
-    <% if place.user.present? %>
-      <small><%= place.user.email %></small>
-    <% end %>
   </div>
 <% end %>
 <%= will_paginate @posts %>
