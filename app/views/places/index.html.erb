@@ -1,9 +1,9 @@
 <% @places.each do |place| %>
   <div class="nice-box col-xs-10 col-xs-offset-1">
-    <h1 class=stylish-link><%= link_to place.name, place_path(place) %></h1><br/>
+    <div class=stylish-link><h1><%= link_to place.name, place_path(place) %></h1></div><br/>
     <p><%= place.description %></p><br/>
     <p><%= place.address %></p>
 
   </div>
 <% end %>
-<%= will_paginate @posts %>
+<%= will_paginate @places %>

@@ -84,9 +84,10 @@ body {
     text-indent: 10px;}
   }
 
-.stylish-link{
-  color: black;
+.stylish-link a {
+  color: #333;
 }
-.stylish-link:hover {
-  color: grey;
+  .stylish-link a:hover {
+  font-size: 120%;
+  text-decoration: none;
 }
