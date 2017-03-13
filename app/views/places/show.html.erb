@@ -2,6 +2,10 @@
   <h1><%= @place.name %></h1>
   <p><%= @place.description %><p/><br/>
   <p><%= @place.address %></p>
-  <%= link_to 'Edit', edit_place_path(@place), class: 'nice-button' %><br/>
-  <%= link_to 'Destroy', place_path(@place), class: 'nice-button', method: :delete, data: {confirm: 'Are you sure you want to destroy your entry?'}%>
+  <div class="pull-right">
+    <% if current_user && current_user == @place.user %>
+      <%= link_to 'Edit', edit_place_path(@place), class: 'nice-button' %><br/>
+      <%= link_to 'Destroy', place_path(@place), class: 'nice-button', method: :delete, data: {confirm: 'Are you sure you want to destroy your entry?'}%>
+    <% end %>
+  </div>
 </div>
