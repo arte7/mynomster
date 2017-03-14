@@ -21,6 +21,10 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise', '>= 3.2.4'
 
+gem 'geocoder', '1.3.4'
+
+gem 'figaro', '>= 1.0.0'
+
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -13,3 +13,5 @@ module Mynomster
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+#GEOCODER_API_KEY: "AiEKXeZYfOMxCWeNtHxC7kx6ES-NoGzowEf5TBloaM8nPo3zfst-7gRhZ0P9jhfe"
