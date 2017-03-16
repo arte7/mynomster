@@ -5,7 +5,7 @@
 
   <% if @place.latitude.present? && @place.longitude.present? %>
 
-    <script class="map-style">
+    <script>
 
       function initMap() {
         var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
