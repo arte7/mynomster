@@ -11,7 +11,7 @@
           var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
           var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14,
+            zoom: 13,
             center: myLatLng
           });
 
@@ -40,6 +40,7 @@
       <%= link_to 'Destroy', place_path(@place), class: 'nice-button', method: :delete, data: {confirm: 'Are you sure you want to destroy your entry?'}%>
     <% end %>
   </div>
+  <br/>
 </div>
 
 <div class="clear"></div>
