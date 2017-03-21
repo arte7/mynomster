@@ -37,7 +37,7 @@ class PlacesController < ApplicationController
       return render text: 'Not Allowed', status: :forbidden
     end
 
-    @place.update_attribute(place_params)
+    @place.update_attributes(place_params)
     if @place.valid?
       redirect_to root_path
     else
