@@ -6,5 +6,5 @@ class Place < ApplicationRecord
   after_validation :geocode
 
   validates :name, length: {minimum: 4, too_short: "%{count} characters is the minimum legth"}
-  validates :descriptoin, :address, presence: true
+  validates :description, :address, presence: true
 end

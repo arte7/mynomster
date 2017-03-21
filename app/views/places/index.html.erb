@@ -3,8 +3,6 @@
     <div class="stylish-link"><h1><%= link_to place.name, place_path(place) %></h1></div>
     <p><%= place.description %></p><br/>
     <p><%= place.address %></p>
-    
-
   </div>
 <% end %>
 <%= will_paginate @places %>
