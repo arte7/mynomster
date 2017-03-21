@@ -54,7 +54,7 @@
 <% @place.comments.each do |comment| %>
   <div>
     <blockquote>
-      <<% if comment.humanized_rating.present? %>
+      <% if comment.humanized_rating.present? %>
         <b><%= comment.humanized_rating %></b> -
       <% end %>
       <%= comment.message %>
