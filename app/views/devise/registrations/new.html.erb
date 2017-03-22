@@ -11,10 +11,10 @@
       <%= f.input :password_confirmation, required: true %>
     </div>
     <br/>
-    <div class="nice-button">
-      <%= f.button :submit, "Sign up", class: 'nice-button' %>
-    </div>
+    <%= f.button :submit, "Sign up", class: 'nice-button' %>
   <% end %>
 
-  <%= render "devise/shared/links" %>
+  <div class="nice-button">
+    <%= render "devise/shared/links" %>
+  </div>
 </div>
