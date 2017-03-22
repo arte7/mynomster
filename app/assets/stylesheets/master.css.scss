@@ -153,9 +153,32 @@ body {
   color: inherit;
   font: inherit;
   margin-top: 20px;
+  margin-left: 10%;
   -webkit-tap-highlight-color: transparent;
 }
-    a:hover {
-      text-decoration: none;
-      color: #333;
-    }
+
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.modal .content {
+  position: absolute;
+  width:  500px;
+  left: 50%;
+  margin-left: -250px;
+  background-color: #bfbfbf;
+  text-indent: 5px;
+  padding: 15px;
+}
+  .modal h3 {
+    text-indent: 15px;
+  }
+  .modal label {
+    vertical-align: top;
+    width: 100px;
+  }
+  .modal textarea{
+    width: 250px;
+    height: 150px;
+  }
