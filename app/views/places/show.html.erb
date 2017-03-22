@@ -46,11 +46,29 @@
 </div>
 
 <div class="clear"></div>
-<%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
-  <%= f.input :message %>
-  <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-  <%= f.submit "Add a Comment", class: 'nice-button' %>
-<% end %>
+
+<!-- Button trigger modal -->
+<button class="nice-button" data-toggle="modal" data-targets="#myModal">
+  Add a comment
+</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <head>
+      <button type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 id="myModalLabel">Add a comment</h4>
+    </head>
+    <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
+      <body>
+        <%= f.input :message %>
+        <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
+      </body>
+      <footer>
+        <button tyoe="button" class="nice-button" data-dismiss="modal">Close</button>
+        <%= f.submit "Add a Comment", class: 'nice-button' %>
+      </footer>
+    <% end %>
+  </div>
 
 
 <div class="small-box">
