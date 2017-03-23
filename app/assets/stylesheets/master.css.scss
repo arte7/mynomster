@@ -153,7 +153,6 @@ body {
   color: inherit;
   font: inherit;
   margin-top: 20px;
-  margin-left: 10%;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -183,3 +182,11 @@ a:hover {
   .form-actions a {
     color: black;
   }
+
+.dismiss-button {
+  float: right;
+}
+
+.modal .long-button {
+  margin: 0px;
+}
